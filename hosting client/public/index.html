@@ -1,0 +1,63 @@
+
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>client update data</title>
+		<link rel="shortcut icon" href="img/favo.png" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<link rel="stylesheet" href="js/leaflet.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	<body>
+		
+		<div id="map"></div>
+		<div id="myNav" class="overlay" >
+			<video id="localVideo"  muted style=" position:absolute;left:0px;top:0px;width:360px; height: 240px"></video>
+			<canvas id="canvas" style="position:absolute;left:0px;top:0px"></canvas>
+		    <div style="display: none;">
+			<input type="text" name="addr" id="addr" size="10" >
+			<input type="text" id="id"  value="1" >
+			<input type="text" id="waktu">
+			<input type="text" id="face">
+			</div>
+			<div class="overlay-content">
+			  <div class="w3-container">
+				<a href="/page.html" class="w3-button w3-blue" onclick="closeNav(),addData_Proses()">cek kehadiran</a>
+			</div>
+			</div>
+			
+			
+			</div>
+
+		<div id="search1">
+			<video id="remoteVideo"  muted style="display: none;"></video>
+		</div>
+
+		<div id="search">
+			<p id="hubung">koneksi sambungan</p>
+			<div id="results" style="position: relative;"></div>
+		
+			
+		</div>
+
+
+		<script src="js/leaflet.js"></script>
+		<script src="libfirejeq/jquery.min.js"></script>
+		<script src="js/map.js"></script>
+
+		<script src='wrtc/scale.min.js'></script>
+		<script src="wrtc/wrtc.js"></script>
+
+		<script src="face/facedetec.js"></script>
+		<script src="face/webcam.js"></script>
+		<script src="face/sf.js"></script>
+		
+		<script src="controlcss/down.js"></script>
+		<script src="controlcss/timer.js"></script>
+
+		<script src="libfirejeq/firebase.js"></script>
+		<script src="libfirejeq/cloud.js"></script>
+
+	</body>
+</html>

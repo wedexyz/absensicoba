@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>halaman utaman</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/favo.png" type="image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+  /*---w3 --css*/
+  body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('img/images.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body onload="tampilData()"> 
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <img src="img/favo.png" alt="sakti#007" style="width: 100px;height: 100px;">
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Kamera absen</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center"><a class="w3-button w3-teal" href="index.html">kamera </a></p>
+    <p class="w3-large w3-center"><button class="w3-button w3-blue" onclick="openNav()">cek kehadiran </button></p>
+    <table id="tabel"class="w3-table w3-transparent w3-tiny" >
+      <thead  class="w3-teal" >
+          <tr  >
+              <th scope="col">Nama</th>
+              <th scope="col">Waktu</th>	
+              <th scope="col">Koordinat</th>
+            </tr>
+        </thead>
+        <tbody style="background-color: transparent;">
+        </tbody>
+  </table>
+  </div>
+
+</div>
+
+
+  <script src="controlcss/down.js"></script>
+  <script src="libfirejeq/jquery.min.js"></script>
+  <script src="libfirejeq/firebase.js"></script>
+  <script src="libfirejeq/cloud.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body onload="init(),tampilData()">
+<div class="header">
+<h1> <img src="img/favo.png" alt="icon" style="width: 200px;height:100px;">Dashboard admin</h1>
+  </div>
+  
+  <div class="row">
+    <div class="col-3 col-s-3 menu">
+      <ul>
+        <li><p id="wrtc">koneksi jaringan </p></li>
+        <li> <div id="label-container"></div></li>
+        <li><input type="text" id="input"></li>
+        <li><input type="text " id="text"></li>
+        <li><input type="text " id="waktu"></li>
+        <li><input type="text " id="idwaktu"></li>
+        <li><input type="text" id="lokasi" style="width: 400px;"></li>
+           
+      </ul>
+    </div>
+  
+    <div class="col-3 col-s-3">
+        <div id="webcam-container" style="display: none;"></div>
+        <video id="remoteVideo"  autoplay controls muted   poster="img/favo.png" controls   style="width: 360px;height: 240px;"></video>
+        <video id="localVideo"   autoplay muted style="display: none;"></video>
+    </div>
+  
+
+
+    <div class="col-6 col-s-12">
+      <div class="aside">
+       <p>database jaringan</p>
+<button onclick="tampilData()">Tampil Data</button>
+       <div class="w3-container">
+        <table id="tabel"class="w3-table-all w3-card-4 " >
+            <thead  >
+                <tr class="w3-teal">
+                  <th scope="col">Id</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Waktu</th>	
+                    <th scope="col">Koordinat</th>
+                  </tr>
+              </thead>
+              <tbody>
+              </tbody>
+        </table>
+    </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>masa uji coba</p>
+  </div>
+
+
+<script  src="wrtc/scale.min.js"></script>
+<script src="wrtc/wrtc.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script src="script/script.js"></script>
+
+
+<script src="libfirejeq/jquery.min.js"></script>
+<script src="libfirejeq/firebase.js"></script>
+<script src="libfirejeq/cloud.js"></script>
+
+</body>
+</html>
+
+
+
+
